@@ -5,12 +5,16 @@
   <ion-content class="has-header">
     <div class="list">
         <a ng-repeat="item in items"
-           href="#/app/images/{{items.image}}"
-           class="item item-thumbnail-left">
+           href="#/app/images/{{item.id}}"
+           class="item item-thumbnail-left" 
+           ng-click="passDeets(item)"
+           onmouseover="mouseData()">
 
         <img src="{{item.image}}">
-        <h2>{{item.text}}</h2>
+        <h2>{{item.keyWord}}</h2>
         </a>
+  <!-- <img src="{{url}}"> -->
+  <img src="{{currentImage.image}}">
 
     </div>
   </ion-content>

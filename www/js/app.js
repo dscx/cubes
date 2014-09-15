@@ -107,12 +107,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
-     .state('app.singles', {
-      url: "/images/:text",
+     .state('app.zoom', {
+      url: "/images/:imageId",
       views: {
         'menuContent' :{
           templateUrl: "templates/image.html",
-          controller: 'ImagesCtrl'
+          controller: 'zoomCtrl'
         }
       }
     });

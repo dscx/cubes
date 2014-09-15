@@ -1,7 +1,10 @@
 <ion-view title="Image">
   <ion-content class="has-header">
-    <h1>{{this.text}}</h1>
-    <Script>console.log({{items}}, this, 'this')</Script>
-      
+    <div controller="zoomCtrl">
+    <p onmouseover="testEr()">HELLO</p>
+    {{test}}
+   <!--    <img src="{{url}}"> -->
+      <img src="{{$rootscope.url}}">
+    </div>
   </ion-content>
 </ion-view>
