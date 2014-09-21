@@ -4,37 +4,37 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
- angular.module('masonryApp', ['wu.masonry']).
-                controller('ImagesCtrl', function ($scope) {
-                    function genBrick() {
-                        var height = 160;
-                        var id = ~~(Math.random() * 10000);
-                        return {
-                            src: 'http://lorempixel.com/g/280/' + height + '/?' + id
-                        };
-                    };
+ // angular.module('masonryApp', ['wu.masonry']).
+ //                controller('ImagesCtrl', function ($scope) {
+ //                    function genBrick() {
+ //                        var height = 160;
+ //                        var id = ~~(Math.random() * 10000);
+ //                        return {
+ //                            src: 'http://lorempixel.com/g/280/' + height + '/?' + id
+ //                        };
+ //                    };
 
-                    $scope.bricks = [
-                        genBrick(),
-                        genBrick(),
-                        genBrick(),
-                        genBrick(),
-                        genBrick()
-                    ];
+ //                    $scope.bricks = [
+ //                        genBrick(),
+ //                        genBrick(),
+ //                        genBrick(),
+ //                        genBrick(),
+ //                        genBrick()
+ //                    ];
 
-                    $scope.add = function add() {
-                        $scope.bricks.push(genBrick());
-                    };
+ //                    $scope.add = function add() {
+ //                        $scope.bricks.push(genBrick());
+ //                    };
 
-                    $scope.remove = function remove() {
-                        $scope.bricks.splice(
-                            ~~(Math.random() * $scope.bricks.length),
-                            1
-                        )
-                    };
-                });
+ //                    $scope.remove = function remove() {
+ //                        $scope.bricks.splice(
+ //                            ~~(Math.random() * $scope.bricks.length),
+ //                            1
+ //                        )
+ //                    };
+ //                });
 
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('starter', ['ionic', 'starter.controllers', 'ImageStorage'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
