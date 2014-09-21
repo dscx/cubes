@@ -1,0 +1,14 @@
+tester code for masonry layout
+
+
+<!-- <ion-view title="Image">
+  <ion-content class="has-header">
+    <h1>{{item.text}}</h1>
+      <div masonry column-width="160">
+          <div class="masonry-brick thumb" ng-repeat="item in items">
+              <img ng-src="{{item.image}}">
+          </div>
+      </div>
+  </ion-content>
+</ion-view>
+ -->
